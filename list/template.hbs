@@ -1,0 +1,12 @@
+{{registerstylesheet "css/new-template.css"}}
+<div class="new-template">
+    <h3>{{Context.ModuleTitle}} - {{Context.ModuleId}} </h3>
+    <ul>
+        {{#each Quick_Links}}
+            <li>
+                <a href="{{Link}}"><span>{{Text}} - {{@index}}</span></a>
+            </li>
+        {{/each}}
+    </ul>
+    <p>Settings {{Settings.Name}}</p>
+</div>
